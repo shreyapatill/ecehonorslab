@@ -5,31 +5,16 @@ Introduction
 
 
 Statement of Purpose
-
-Please provide a brief description of your project. List the goals and objectives of your project and explain why this project is useful for the problem your group wants to solve or functions that make your project unique. 
 The goal of our project is to construct and program a machine that can autonomously solve a Rubik’s Cube puzzle, starting from any random combination. 
 
 Background Research
 
-Please provide details on the background research your group has done for your project. Explain what drives you to work on this project and/or why this project is important.
 We are working on this project because we thought it would be cool to create something that could solve the complicated puzzle that is the Rubik’s Cube. We looked into what people have used to build a Rubik’s cube solver and modified their designs to build our project.
-Also include discussions on any similar projects your group have looked at in coming up with your project. How is your proposed project different or similar to those your group have looked at.
 This project is similar to the Rubik’s Cube Solver back in Spring 2020. However, we plan to make the mechanical frame out of legos or 3d printing to cut down on cost and need for mechanical design experience. We also plan to use two cameras to scan the faces of the cube. 
-
-
-Design Details
-
-
-
-Block Diagram / Flow Chart
-
-Provide a simple block diagram of your hardware design. A block diagram is a schematic graphic that shows the interactions between different components in a hardware or software system. If appropriate, please also include a flow chart showing the steps your design needs to go through to function. The online program draw.io is a great tool to create polished block diagrams and flowcharts. Likewise Microsoft's visio is also a great program to create block diagrams and flowcharts.
-
 
 
 System Overview
 
-Provide descriptions to your block diagram and flow chart. State the purpose of each block. 
 Rubik’s Cube: Would be a shame if this were missing...
 UI: Where a human can input the colors of the faces. This is the input of the machine.
 Each color has a number, you run a python code that allows you to type in the numbers that represent the cube
@@ -42,7 +27,6 @@ Stepper Motors: Rotates the faces of the cube to solve it
 
 Parts
 
-Provide a list of parts that you may need for your project. This list may change as you work on your project. 
 Rubik’s Cube
 Rubik's Cube on Amazon
 $6
@@ -70,7 +54,6 @@ TOTAL: $140 + legos (if we plan to go with those)
  
 Possible Challenges
 
-Please list some of the challenges that your group foresees in working on your project.
 Frame design &  material (lego or 3-D printing?)
 Creating a UI to input faces
 Virtual communications/construction
@@ -78,11 +61,9 @@ Code it so the solver stops at the solution
  
 References
 
-List all references you used in your proposal. This is important, you do not want to be blamed for plagiarism. IEEE citation format is highly recommended. You can use citethisforme.com's IEEE citation generator to painlessly generate your references in this style.
-https://www.speedsolving.com/threads/torque-on-conventional-cubes.76309/
-	 [1]J. Flatland and P. Rose, "jayflatland/HighFrequencyTwister", GitHub, 2020. [Online]. Available: https://github.com/jayflatland/HighFrequencyTwister/blob/master/LICENSE. [Accessed: 18- Sep- 2020].
+	[1]J. Flatland and P. Rose, "jayflatland/HighFrequencyTwister", GitHub, 2020. [Online]. Available: https://github.com/jayflatland/HighFrequencyTwister/blob/master/LICENSE. [Accessed: 18- Sep- 2020].
 	[2]"Adafruit's Raspberry Pi Lesson 10. Stepper Motors", Adafruit Learning System, 2020. [Online]. Available: https://learn.adafruit.com/adafruits-raspberry-pi-lesson-10-stepper-motors. [Accessed: 18- Sep- 2020].
 	[3]N. Knopf and J. Swiezy, Web.mit.edu, 2020. [Online]. Available: http://web.mit.edu/6.111/www/f2017/projects/knopf_Project_Design_Presentation.pdf. [Accessed: 18- Sep- 2020].
 	[4]"rubix cube transparent - Google Search", Google.com, 2020. [Online]. Available: https://www.google.com/search?q=rubix+cube+transparent&tbm=isch&ved=2ahUKEwje7rqF2PHrAhXXO80KHXg_AiAQ2-cCegQIABAA&oq=rubix+cube+tra&gs_lcp=CgNpbWcQARgAMgIIADICCAAyAggAMgIIADIGCAAQCBAeMgYIABAIEB4yBggAEAgQHjIGCAAQCBAeMgYIABAIEB4yBggAEAgQHjoECAAQQ1ClmDJY3KYyYIqwMmgAcAB4AIABVYgBvgKSAQE0mAEAoAEBqgELZ3dzLXdpei1pbWfAAQE&sclient=img&ei=bx9kX577LNf3tAb4_oiAAg&bih=937&biw=1920&rlz=1C1CHBF_enUS910US910#imgrc=FZIFQ5bO0elW9M. [Accessed: 18- Sep- 2020].
 	[5]SenorJuan, “Torque on Conventional Cubes,” SpeedSolving Puzzles Community, 27-Jan-2020. [Online]. Available: https://www.speedsolving.com/threads/torque-on-conventional-cubes.76309/. [Accessed: 20-Sep-2020]. 
-[6]"MineLT/CubeSolver", GitHub, 2020. [Online]. Available: https://github.com/MineLT/CubeSolver. [Accessed: 27- Sep- 2020].
+	[6]"MineLT/CubeSolver", GitHub, 2020. [Online]. Available: https://github.com/MineLT/CubeSolver. [Accessed: 27- Sep- 2020].
