@@ -1,7 +1,10 @@
+# Solver from https://github.com/pglass/cube/blob/master/rubik/solve.py
+#Formating self-implemented
 import sys
 import time
 from rubik import cube
 from rubik.maths import Point
+import moveConverter
 
 DEBUG = False
 
@@ -498,35 +501,25 @@ class Solver:
         assert self.cube[cube.LEFT + cube.FRONT].colors[2] == self.cube.front_color() and \
                self.cube[cube.LEFT + cube.FRONT].colors[0] == self.cube.left_color()
 
-def solve(cubeString):
+def solve(cubeString): #Takes a cube string, returns the list of moves in terms of 6 moves to solve
     c = cube.Cube(cubeString)
+    print(c)
     solver = Solver(c)
     solver.solve()
 
-    moves = convert(solver.moves)
+    moves = moveConverter.convert(solver.moves)
 
     return moves
 
-def convert(solverMoves): #take solverMoves, convert in terms of 6 moves
-    #Unimplemented!
-    return solverMoves
-
 if __name__ == '__main__':
     DEBUG = True
-    #F = white, L = orange, D = green, R = red, U = blue, B = yellow
-    c = cube.Cube("DLURRDFFUBBLDDRBRBLDLRBFRUULFBDDUFBRBBRFUDFLUDLUULFLFR")
-    print("Solving:\n", c)
-    orig = cube.Cube(c)
-    solver = Solver(c)
-    solver.solve()
+    moves = solve("RRRRRRRRRBBBUUUFFFDDDBBBUUUFFFDDDBBBUUUFFFDDDLLLLLLLLL")
+    print(str(len(moves)) + " moves:")
+    print(moves)
 
-    print(f"{len(solver.moves)} moves: {' '.join(solver.moves)}")
-
-    print(c)
-
-    check = cube.Cube(orig)
-    check.sequence(" ".join(solver.moves))
-    assert check.is_solved()
+#F = white, L = orange, D = green, R = red, U = blue, B = yellow
+#input: a string in the format: "DLURRDFFUBBLDDRBRBLDLRBFRUULFBDDUFBRBBRFUDFLUDLUULFLFR"
+#   where the letters are in the order of the table below:
 #               ----------------
 #               | 0  | 1  | 2  |
 #               ----------------
