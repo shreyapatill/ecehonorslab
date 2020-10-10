@@ -1,7 +1,7 @@
 #Solver copied from https://github.com/MineLT/CubeSolver/blob/master/solver%20with%20software/SolveBH.py
-from cubeSolver.Side import *
-from cubeSolver.Corner import *
-from cubeSolver.tools import *
+from Side import *
+from Corner import *
+from tools import *
 import ast
 import time
 
@@ -2796,8 +2796,8 @@ def getSolution(cubeString):
                 c[18],c[19],c[20],c[30],c[31],c[32],c[42],c[43],c[44],
                 c[9] ,c[10],c[11],c[21],c[22],c[23],c[33],c[34],c[35],
                 c[45],c[46],c[37],c[48],c[49],c[50],c[51],c[52],c[53]]
-    #testCube = [3,0,5,5,0,5,0,4,0,3,2,4,1,3,4,3,1,0,0,3,4,1,4,5,3,0,5,1,0,1,2,1,3,1,1,4,2,4,4,2,2,5,1,4,2,2,2,5,3,5,3,2,0,5]
-    solution, noConvertSol = solve(finalCube)
+    cube = [3,0,5,5,0,5,0,4,0,3,2,4,1,3,4,3,1,0,0,3,4,1,4,5,3,0,5,1,0,1,2,1,3,1,1,4,2,4,4,2,2,5,1,4,2,2,2,5,3,5,3,2,0,5]
+    solution, noConvertSol = solve(cube)
     print(solution)
     print(noConvertSol)
     return noConvertSol #might need to format this still
