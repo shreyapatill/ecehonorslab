@@ -1,5 +1,5 @@
 from tkinter import *
-from cubesolver import solve
+from solve import *
 
 root = Tk()
 
@@ -114,7 +114,7 @@ def check_tiles():
 # make a button to check whether the input is valid
 check = Button(root, text="Check Input", command=check_tiles).grid(row=3, columnspan=12)
 
+root.mainloop()
+
 # calls solve function
 getSolution(str(colors))
-
-root.mainloop()

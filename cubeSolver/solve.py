@@ -2801,6 +2801,8 @@ def getSolution(cubeString):
     print(solution)
     print(noConvertSol)
     return noConvertSol #might need to format this still
+
+getSolution("UUUUUUUUUFFFFFFFFFRRRRRRRRRBBBBBBBBBLLLLLLLLLDDDDDDDDD")
 #Orignal cubestring, must convert
 #               ----------------
 #               | 0  | 1  | 2  |
