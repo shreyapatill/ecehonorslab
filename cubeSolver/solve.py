@@ -5,7 +5,7 @@ from tools import *
 import ast
 import time
 
-'''print('Valentin le plus beau gosse de la prépa')'''
+
 
 f = open("BH.txt", 'r')
 
