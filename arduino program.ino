@@ -128,7 +128,7 @@ digitalWrite (pinEnableU, LOW);
 //
 // Only one face turns (regardless of the direction and the direction)
 //
-void  UneFaceMvt ( int pinStep, int pinDir, bool dir, int nbrPas) {
+void  OneSideMvt ( int pinStep, int pinDir, bool dir, int nbrPas) {
 digitalWrite (pinDir, dir);                              // choice of direction
 for ( int i = 0 ; i <acc; i ++) {                           // only one face turns
    digitalWrite (pinStep, HIGH);                         // The motor advances by one step (rising edge)
@@ -153,7 +153,7 @@ for ( int i = 0 ; i <acc; i ++) {                           // only one face tur
 //
 // Both faces take the same number of steps (regardless of the direction and the direction)
 //
-void  DeuxFacesMemeMvt ( int pinStep1, int pinStep2, int pinDir1, int pinDir2, bool dir1, bool dir2, int nbrPas) {
+void  TwoSidesSameMvt ( int pinStep1, int pinStep2, int pinDir1, int pinDir2, bool dir1, bool dir2, int nbrPas) {
 digitalWrite (pinDir1, dir1);
 digitalWrite (pinDir2, dir2);
 for ( int i = 0 ; i <acc; i ++) {                           // Both faces turn
@@ -185,7 +185,7 @@ for ( int i = 0 ; i <acc; i ++) {                           // Both faces turn
 //
 // one of the two faces is 50 steps, the other is 100 (regardless of the direction and the direction)
 //
-void  DeuxFacesPasMemeMvt ( int pinStep1, int pinStep2, int pinDir1, int pinDir2, bool dir1) {
+void  TwoSidesNotSameMvt ( int pinStep1, int pinStep2, int pinDir1, int pinDir2, bool dir1) {
 int nbrPas = 50 ;
 digitalWrite (pinDir1, dir1);
 digitalWrite (pinDir2, dir1);
@@ -232,15 +232,15 @@ for ( int i = 0 ; i <acc; i ++) {                           // Both faces turn
 void  loop () {
 if (Serial. available ()) {
   int r = Serial. read () - 65 ;                           // r: index of the movement in the Tab array
-  if (Tab [r] [ 0 ] == 1 ) {                                  // call the UneFaceMvt method
-     UneFaceMvt (Tab [r] [ 1 ], Tab [r] [ 2 ], Tab [r] [ 3 ], Tab [r] [ 4 ]);
+  if (Tab [r] [ 0 ] == 1 ) {                                  // call the OneSideMvt method
+     OneSideMvt (Tab [r] [ 1 ], Tab [r] [ 2 ], Tab [r] [ 3 ], Tab [r] [ 4 ]);
      Serial. print (r);
     }
-  else  if (Tab [r] [ 0 ] == 2 ) {                             // call the DeuxFacesMemeMvt method
-    DeuxFacesMemeMvt (Tab [r] [ 1 ], Tab [r] [ 2 ], Tab [r] [ 3 ], Tab [r] [ 4 ], Tab [r] [ 5 ], Tab [r] [ 6 ], Tab [r] [ 7 ]);
+  else  if (Tab [r] [ 0 ] == 2 ) {                             // call the TwoSidesMvt method
+    TwoSidesMvt (Tab [r] [ 1 ], Tab [r] [ 2 ], Tab [r] [ 3 ], Tab [r] [ 4 ], Tab [r] [ 5 ], Tab [r] [ 6 ], Tab [r] [ 7 ]);
     }
-  else  if (Tab [r] [ 0 ] == 3 ) {                             // call the DeuxFacesPasMemeMvt method
-    DeuxFacesPasMemeMvt (Tab [r] [ 1 ], Tab [r] [ 2 ], Tab [r] [ 3 ], Tab [r] [ 4 ], Tab [r] [ 5 ]);
+  else  if (Tab [r] [ 0 ] == 3 ) {                             // call the TwoSidesNotMvt method
+    TwoSidesNotMvt (Tab [r] [ 1 ], Tab [r] [ 2 ], Tab [r] [ 3 ], Tab [r] [ 4 ], Tab [r] [ 5 ]);
     }
   }
 }
