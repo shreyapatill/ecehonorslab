@@ -812,7 +812,7 @@ agreement for further details.
 	(output)
 	(rect 880 -184 1056 -168)
 	(text "OUTPUT" (rect 135 6 175 16)(font "Arial" (font_size 6)))
-	(text "VMOT" (rect 5 5 39 16)(font "Arial" ))
+	(text "VMOT" (rect 5 5 38 16)(font "Arial" ))
 	(pt 176 8)
 	(drawing
 		(line (pt 176 8)(pt 124 8))
@@ -829,7 +829,7 @@ agreement for further details.
 	(output)
 	(rect 880 -160 1056 -144)
 	(text "OUTPUT" (rect 135 6 175 16)(font "Arial" (font_size 6)))
-	(text "GND" (rect 5 5 31 16)(font "Arial" ))
+	(text "GND" (rect 5 5 30 16)(font "Arial" ))
 	(pt 176 8)
 	(drawing
 		(line (pt 176 8)(pt 124 8))
@@ -846,7 +846,7 @@ agreement for further details.
 	(output)
 	(rect 880 -136 1056 -120)
 	(text "OUTPUT" (rect 135 6 175 16)(font "Arial" (font_size 6)))
-	(text "B2" (rect 5 5 21 16)(font "Arial" ))
+	(text "B2" (rect 5 5 20 16)(font "Arial" ))
 	(pt 176 8)
 	(drawing
 		(line (pt 176 8)(pt 124 8))
@@ -863,7 +863,7 @@ agreement for further details.
 	(output)
 	(rect 880 -112 1056 -96)
 	(text "OUTPUT" (rect 135 6 175 16)(font "Arial" (font_size 6)))
-	(text "B1" (rect 5 5 21 16)(font "Arial" ))
+	(text "B1" (rect 5 5 20 16)(font "Arial" ))
 	(pt 176 8)
 	(drawing
 		(line (pt 176 8)(pt 124 8))
@@ -880,7 +880,7 @@ agreement for further details.
 	(output)
 	(rect 880 -88 1056 -72)
 	(text "OUTPUT" (rect 135 6 175 16)(font "Arial" (font_size 6)))
-	(text "A1" (rect 5 5 21 16)(font "Arial" ))
+	(text "A1" (rect 5 5 20 16)(font "Arial" ))
 	(pt 176 8)
 	(drawing
 		(line (pt 176 8)(pt 124 8))
@@ -897,7 +897,7 @@ agreement for further details.
 	(output)
 	(rect 880 -64 1056 -48)
 	(text "OUTPUT" (rect 135 6 175 16)(font "Arial" (font_size 6)))
-	(text "A2" (rect 5 5 21 16)(font "Arial" ))
+	(text "A2" (rect 5 5 20 16)(font "Arial" ))
 	(pt 176 8)
 	(drawing
 		(line (pt 176 8)(pt 124 8))
@@ -914,7 +914,7 @@ agreement for further details.
 	(output)
 	(rect 880 -40 1056 -24)
 	(text "OUTPUT" (rect 135 6 175 16)(font "Arial" (font_size 6)))
-	(text "FLT" (rect 5 5 27 16)(font "Arial" ))
+	(text "FLT" (rect 5 5 26 16)(font "Arial" ))
 	(pt 176 8)
 	(drawing
 		(line (pt 176 8)(pt 124 8))
@@ -931,7 +931,7 @@ agreement for further details.
 	(output)
 	(rect 880 -8 1056 8)
 	(text "OUTPUT" (rect 135 6 175 16)(font "Arial" (font_size 6)))
-	(text "GND" (rect 5 5 31 16)(font "Arial" ))
+	(text "GND" (rect 5 5 30 16)(font "Arial" ))
 	(pt 176 8)
 	(drawing
 		(line (pt 176 8)(pt 124 8))
@@ -1076,7 +1076,7 @@ agreement for further details.
 	(output)
 	(rect 880 120 1056 136)
 	(text "OUTPUT" (rect 135 6 175 16)(font "Arial" (font_size 6)))
-	(text "VMOT5" (rect 5 5 46 16)(font "Arial" ))
+	(text "VMOT5" (rect 5 5 45 16)(font "Arial" ))
 	(pt 176 8)
 	(drawing
 		(line (pt 176 8)(pt 124 8))
@@ -1093,7 +1093,7 @@ agreement for further details.
 	(output)
 	(rect 880 144 1056 160)
 	(text "OUTPUT" (rect 135 6 175 16)(font "Arial" (font_size 6)))
-	(text "GND6" (rect 5 5 37 16)(font "Arial" ))
+	(text "GND6" (rect 5 5 36 16)(font "Arial" ))
 	(pt 176 8)
 	(drawing
 		(line (pt 176 8)(pt 124 8))
@@ -1127,7 +1127,7 @@ agreement for further details.
 	(output)
 	(rect 880 192 1056 208)
 	(text "OUTPUT" (rect 135 6 175 16)(font "Arial" (font_size 6)))
-	(text "B2" (rect 5 5 21 16)(font "Arial" ))
+	(text "B2" (rect 5 5 20 16)(font "Arial" ))
 	(pt 176 8)
 	(drawing
 		(line (pt 176 8)(pt 124 8))
@@ -1144,7 +1144,7 @@ agreement for further details.
 	(output)
 	(rect 880 216 1056 232)
 	(text "OUTPUT" (rect 135 6 175 16)(font "Arial" (font_size 6)))
-	(text "A3" (rect 5 5 21 16)(font "Arial" ))
+	(text "A3" (rect 5 5 20 16)(font "Arial" ))
 	(pt 176 8)
 	(drawing
 		(line (pt 176 8)(pt 124 8))
@@ -1161,7 +1161,7 @@ agreement for further details.
 	(output)
 	(rect 880 240 1056 256)
 	(text "OUTPUT" (rect 135 6 175 16)(font "Arial" (font_size 6)))
-	(text "A4" (rect 5 5 21 16)(font "Arial" ))
+	(text "A4" (rect 5 5 20 16)(font "Arial" ))
 	(pt 176 8)
 	(drawing
 		(line (pt 176 8)(pt 124 8))
@@ -1178,7 +1178,7 @@ agreement for further details.
 	(output)
 	(rect 880 264 1056 280)
 	(text "OUTPUT" (rect 135 6 175 16)(font "Arial" (font_size 6)))
-	(text "FLT7" (rect 5 5 33 16)(font "Arial" ))
+	(text "FLT7" (rect 5 5 32 16)(font "Arial" ))
 	(pt 176 8)
 	(drawing
 		(line (pt 176 8)(pt 124 8))
@@ -1195,7 +1195,7 @@ agreement for further details.
 	(output)
 	(rect 880 296 1056 312)
 	(text "OUTPUT" (rect 135 6 175 16)(font "Arial" (font_size 6)))
-	(text "GND8" (rect 5 5 37 16)(font "Arial" ))
+	(text "GND8" (rect 5 5 36 16)(font "Arial" ))
 	(pt 176 8)
 	(drawing
 		(line (pt 176 8)(pt 124 8))
@@ -1340,7 +1340,7 @@ agreement for further details.
 	(output)
 	(rect 888 408 1064 424)
 	(text "OUTPUT" (rect 135 6 175 16)(font "Arial" (font_size 6)))
-	(text "VMOT14" (rect 5 5 52 16)(font "Arial" ))
+	(text "VMOT14" (rect 5 5 51 16)(font "Arial" ))
 	(pt 176 8)
 	(drawing
 		(line (pt 176 8)(pt 124 8))
@@ -1357,7 +1357,7 @@ agreement for further details.
 	(output)
 	(rect 888 432 1064 448)
 	(text "OUTPUT" (rect 135 6 175 16)(font "Arial" (font_size 6)))
-	(text "GND15" (rect 5 5 44 16)(font "Arial" ))
+	(text "GND15" (rect 5 5 43 16)(font "Arial" ))
 	(pt 176 8)
 	(drawing
 		(line (pt 176 8)(pt 124 8))
@@ -1391,7 +1391,7 @@ agreement for further details.
 	(output)
 	(rect 888 480 1064 496)
 	(text "OUTPUT" (rect 135 6 175 16)(font "Arial" (font_size 6)))
-	(text "B2" (rect 5 5 21 16)(font "Arial" ))
+	(text "B2" (rect 5 5 20 16)(font "Arial" ))
 	(pt 176 8)
 	(drawing
 		(line (pt 176 8)(pt 124 8))
@@ -1408,7 +1408,7 @@ agreement for further details.
 	(output)
 	(rect 888 504 1064 520)
 	(text "OUTPUT" (rect 135 6 175 16)(font "Arial" (font_size 6)))
-	(text "A5" (rect 5 5 21 16)(font "Arial" ))
+	(text "A5" (rect 5 5 20 16)(font "Arial" ))
 	(pt 176 8)
 	(drawing
 		(line (pt 176 8)(pt 124 8))
@@ -1425,7 +1425,7 @@ agreement for further details.
 	(output)
 	(rect 888 528 1064 544)
 	(text "OUTPUT" (rect 135 6 175 16)(font "Arial" (font_size 6)))
-	(text "A6" (rect 5 5 21 16)(font "Arial" ))
+	(text "A6" (rect 5 5 20 16)(font "Arial" ))
 	(pt 176 8)
 	(drawing
 		(line (pt 176 8)(pt 124 8))
@@ -1442,7 +1442,7 @@ agreement for further details.
 	(output)
 	(rect 888 552 1064 568)
 	(text "OUTPUT" (rect 135 6 175 16)(font "Arial" (font_size 6)))
-	(text "FLT16" (rect 5 5 39 16)(font "Arial" ))
+	(text "FLT16" (rect 5 5 38 16)(font "Arial" ))
 	(pt 176 8)
 	(drawing
 		(line (pt 176 8)(pt 124 8))
@@ -1459,7 +1459,7 @@ agreement for further details.
 	(output)
 	(rect 888 584 1064 600)
 	(text "OUTPUT" (rect 135 6 175 16)(font "Arial" (font_size 6)))
-	(text "GND17" (rect 5 5 44 16)(font "Arial" ))
+	(text "GND17" (rect 5 5 43 16)(font "Arial" ))
 	(pt 176 8)
 	(drawing
 		(line (pt 176 8)(pt 124 8))
@@ -1604,7 +1604,7 @@ agreement for further details.
 	(output)
 	(rect 1448 -184 1624 -168)
 	(text "OUTPUT" (rect 135 6 175 16)(font "Arial" (font_size 6)))
-	(text "VMOT23" (rect 5 5 52 16)(font "Arial" ))
+	(text "VMOT23" (rect 5 5 51 16)(font "Arial" ))
 	(pt 176 8)
 	(drawing
 		(line (pt 176 8)(pt 124 8))
@@ -1621,7 +1621,7 @@ agreement for further details.
 	(output)
 	(rect 1440 -160 1616 -144)
 	(text "OUTPUT" (rect 135 6 175 16)(font "Arial" (font_size 6)))
-	(text "GND24" (rect 5 5 44 16)(font "Arial" ))
+	(text "GND24" (rect 5 5 43 16)(font "Arial" ))
 	(pt 176 8)
 	(drawing
 		(line (pt 176 8)(pt 124 8))
@@ -1655,7 +1655,7 @@ agreement for further details.
 	(output)
 	(rect 1440 -112 1616 -96)
 	(text "OUTPUT" (rect 135 6 175 16)(font "Arial" (font_size 6)))
-	(text "B2" (rect 5 5 21 16)(font "Arial" ))
+	(text "B2" (rect 5 5 20 16)(font "Arial" ))
 	(pt 176 8)
 	(drawing
 		(line (pt 176 8)(pt 124 8))
@@ -1672,7 +1672,7 @@ agreement for further details.
 	(output)
 	(rect 1440 -88 1616 -72)
 	(text "OUTPUT" (rect 135 6 175 16)(font "Arial" (font_size 6)))
-	(text "A7" (rect 5 5 21 16)(font "Arial" ))
+	(text "A7" (rect 5 5 20 16)(font "Arial" ))
 	(pt 176 8)
 	(drawing
 		(line (pt 176 8)(pt 124 8))
@@ -1689,7 +1689,7 @@ agreement for further details.
 	(output)
 	(rect 1440 -64 1616 -48)
 	(text "OUTPUT" (rect 135 6 175 16)(font "Arial" (font_size 6)))
-	(text "A8" (rect 5 5 21 16)(font "Arial" ))
+	(text "A8" (rect 5 5 20 16)(font "Arial" ))
 	(pt 176 8)
 	(drawing
 		(line (pt 176 8)(pt 124 8))
@@ -1706,7 +1706,7 @@ agreement for further details.
 	(output)
 	(rect 1440 -40 1616 -24)
 	(text "OUTPUT" (rect 135 6 175 16)(font "Arial" (font_size 6)))
-	(text "FLT25" (rect 5 5 39 16)(font "Arial" ))
+	(text "FLT25" (rect 5 5 38 16)(font "Arial" ))
 	(pt 176 8)
 	(drawing
 		(line (pt 176 8)(pt 124 8))
@@ -1723,7 +1723,7 @@ agreement for further details.
 	(output)
 	(rect 1440 -8 1616 8)
 	(text "OUTPUT" (rect 135 6 175 16)(font "Arial" (font_size 6)))
-	(text "GND26" (rect 5 5 44 16)(font "Arial" ))
+	(text "GND26" (rect 5 5 43 16)(font "Arial" ))
 	(pt 176 8)
 	(drawing
 		(line (pt 176 8)(pt 124 8))
@@ -1868,7 +1868,7 @@ agreement for further details.
 	(output)
 	(rect 1456 128 1632 144)
 	(text "OUTPUT" (rect 135 6 175 16)(font "Arial" (font_size 6)))
-	(text "VMOT32" (rect 5 5 52 16)(font "Arial" ))
+	(text "VMOT32" (rect 5 5 51 16)(font "Arial" ))
 	(pt 176 8)
 	(drawing
 		(line (pt 176 8)(pt 124 8))
@@ -1885,7 +1885,7 @@ agreement for further details.
 	(output)
 	(rect 1456 152 1632 168)
 	(text "OUTPUT" (rect 135 6 175 16)(font "Arial" (font_size 6)))
-	(text "GND33" (rect 5 5 44 16)(font "Arial" ))
+	(text "GND33" (rect 5 5 43 16)(font "Arial" ))
 	(pt 176 8)
 	(drawing
 		(line (pt 176 8)(pt 124 8))
@@ -1919,7 +1919,7 @@ agreement for further details.
 	(output)
 	(rect 1456 200 1632 216)
 	(text "OUTPUT" (rect 135 6 175 16)(font "Arial" (font_size 6)))
-	(text "B2" (rect 5 5 21 16)(font "Arial" ))
+	(text "B2" (rect 5 5 20 16)(font "Arial" ))
 	(pt 176 8)
 	(drawing
 		(line (pt 176 8)(pt 124 8))
@@ -1936,7 +1936,7 @@ agreement for further details.
 	(output)
 	(rect 1456 224 1632 240)
 	(text "OUTPUT" (rect 135 6 175 16)(font "Arial" (font_size 6)))
-	(text "A9" (rect 5 5 21 16)(font "Arial" ))
+	(text "A9" (rect 5 5 20 16)(font "Arial" ))
 	(pt 176 8)
 	(drawing
 		(line (pt 176 8)(pt 124 8))
@@ -1953,7 +1953,7 @@ agreement for further details.
 	(output)
 	(rect 1456 248 1632 264)
 	(text "OUTPUT" (rect 135 6 175 16)(font "Arial" (font_size 6)))
-	(text "A10" (rect 5 5 27 16)(font "Arial" ))
+	(text "A10" (rect 5 5 26 16)(font "Arial" ))
 	(pt 176 8)
 	(drawing
 		(line (pt 176 8)(pt 124 8))
@@ -1970,7 +1970,7 @@ agreement for further details.
 	(output)
 	(rect 1456 272 1632 288)
 	(text "OUTPUT" (rect 135 6 175 16)(font "Arial" (font_size 6)))
-	(text "FLT34" (rect 5 5 39 16)(font "Arial" ))
+	(text "FLT34" (rect 5 5 38 16)(font "Arial" ))
 	(pt 176 8)
 	(drawing
 		(line (pt 176 8)(pt 124 8))
@@ -1987,7 +1987,7 @@ agreement for further details.
 	(output)
 	(rect 1456 304 1632 320)
 	(text "OUTPUT" (rect 135 6 175 16)(font "Arial" (font_size 6)))
-	(text "GND35" (rect 5 5 44 16)(font "Arial" ))
+	(text "GND35" (rect 5 5 43 16)(font "Arial" ))
 	(pt 176 8)
 	(drawing
 		(line (pt 176 8)(pt 124 8))
@@ -2132,7 +2132,7 @@ agreement for further details.
 	(output)
 	(rect 1504 448 1680 464)
 	(text "OUTPUT" (rect 135 6 175 16)(font "Arial" (font_size 6)))
-	(text "VMOT41" (rect 5 5 52 16)(font "Arial" ))
+	(text "VMOT41" (rect 5 5 51 16)(font "Arial" ))
 	(pt 176 8)
 	(drawing
 		(line (pt 176 8)(pt 124 8))
@@ -2149,7 +2149,7 @@ agreement for further details.
 	(output)
 	(rect 1504 472 1680 488)
 	(text "OUTPUT" (rect 135 6 175 16)(font "Arial" (font_size 6)))
-	(text "GND42" (rect 5 5 44 16)(font "Arial" ))
+	(text "GND42" (rect 5 5 43 16)(font "Arial" ))
 	(pt 176 8)
 	(drawing
 		(line (pt 176 8)(pt 124 8))
@@ -2183,7 +2183,7 @@ agreement for further details.
 	(output)
 	(rect 1504 520 1680 536)
 	(text "OUTPUT" (rect 135 6 175 16)(font "Arial" (font_size 6)))
-	(text "B2" (rect 5 5 21 16)(font "Arial" ))
+	(text "B2" (rect 5 5 20 16)(font "Arial" ))
 	(pt 176 8)
 	(drawing
 		(line (pt 176 8)(pt 124 8))
@@ -2200,7 +2200,7 @@ agreement for further details.
 	(output)
 	(rect 1504 544 1680 560)
 	(text "OUTPUT" (rect 135 6 175 16)(font "Arial" (font_size 6)))
-	(text "A11" (rect 5 5 27 16)(font "Arial" ))
+	(text "A11" (rect 5 5 26 16)(font "Arial" ))
 	(pt 176 8)
 	(drawing
 		(line (pt 176 8)(pt 124 8))
@@ -2217,7 +2217,7 @@ agreement for further details.
 	(output)
 	(rect 1504 568 1680 584)
 	(text "OUTPUT" (rect 135 6 175 16)(font "Arial" (font_size 6)))
-	(text "A12" (rect 5 5 27 16)(font "Arial" ))
+	(text "A12" (rect 5 5 26 16)(font "Arial" ))
 	(pt 176 8)
 	(drawing
 		(line (pt 176 8)(pt 124 8))
@@ -2234,7 +2234,7 @@ agreement for further details.
 	(output)
 	(rect 1504 592 1680 608)
 	(text "OUTPUT" (rect 135 6 175 16)(font "Arial" (font_size 6)))
-	(text "FLT43" (rect 5 5 39 16)(font "Arial" ))
+	(text "FLT43" (rect 5 5 38 16)(font "Arial" ))
 	(pt 176 8)
 	(drawing
 		(line (pt 176 8)(pt 124 8))
@@ -2251,7 +2251,7 @@ agreement for further details.
 	(output)
 	(rect 1504 624 1680 640)
 	(text "OUTPUT" (rect 135 6 175 16)(font "Arial" (font_size 6)))
-	(text "GND44" (rect 5 5 44 16)(font "Arial" ))
+	(text "GND44" (rect 5 5 43 16)(font "Arial" ))
 	(pt 176 8)
 	(drawing
 		(line (pt 176 8)(pt 124 8))
@@ -2681,6 +2681,12 @@ agreement for further details.
 (junction (pt 1288 600))
 (junction (pt 1288 632))
 (junction (pt 1680 632))
+(text "FRONT" (rect 784 -208 828 -195)(font "Arial" (font_size 8)))
+(text "RIGHT" (rect 800 96 841 109)(font "Arial" (font_size 8)))
+(text "BACK" (rect 808 616 844 629)(font "Arial" (font_size 8)))
+(text "LEFT" (rect 1384 -200 1417 -187)(font "Arial" (font_size 8)))
+(text "DOWN" (rect 1392 88 1432 101)(font "Arial" (font_size 8)))
+(text "UP" (rect 1440 432 1458 445)(font "Arial" (font_size 8)))
 (rectangle (rect 168 32 280 560))
 (rectangle (rect 760 -192 912 24))
 (rectangle (rect 760 112 912 328))
