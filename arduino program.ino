@@ -5,33 +5,33 @@
 
 // Definition A4998 F
 # define  pinEnableF  30                                    // Activate A4998
-# define  pinStepF    12                                    // Rising edge = one step.
-# define  pinDirF     31                                    // Direction
+# define  pinStepF    2                                    // Rising edge = one step.
+# define  pinDirF     3                                    // Direction
 
 // Definition A4998 R
 # define  pinEnableR  34                                    // Activate A4998
-# define  pinStepR    11                                    // Rising edge = one step.
-# define  pinDirR     35                                    // Direction
+# define  pinStepR    17                                    // Rising edge = one step.
+# define  pinDirR     27                                    // Direction
 
 // Definition A4998 B
 # define  pinEnableB  38                                    // Activate A4998
 # define  pinStepB    10                                    // Rising edge = one step.
-# define  pinDirB     39                                    // Direction
+# define  pinDirB     22                                    // Direction
 
 // Definition A4998 L
 # define  pinEnableL  42                                    // Activate A4998
-# define  pinStepL     9                                    // Rising edge = one step.
-# define  pinDirL     43                                    // Direction
+# define  pinStepL     6                                    // Rising edge = one step.
+# define  pinDirL      5                                    // Direction
 
 // Definition A4998 D
 # define  pinEnableD  46                                    // Activate A4998
-# define  pinStepD     5                                    // Rising edge = one step.
-# define  pinDirD     47                                    // Direction
+# define  pinStepD     19                                    // Rising edge = one step.
+# define  pinDirD      26                                    // Direction
 
 // Definition A4998 U
 # define  pinEnableU  50                                    // Activate A4998
-# define  pinStepU     4                                    // Rising edge = one step.
-# define  pinDirU     51                                    // Direction
+# define  pinStepU    16                                    // Rising edge = one step.
+# define  pinDirU     40                                    // Direction
 
 // ############################################### ################################################# ##########
 // Declaration of the variables
