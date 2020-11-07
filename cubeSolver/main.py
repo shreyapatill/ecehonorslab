@@ -117,4 +117,17 @@ check = Button(root, text="Check Input", command=check_tiles).grid(row=3, column
 root.mainloop()
 
 # calls solve function
-getSolution(str(colors))
+check = getSolution(str(colors))
+
+# solve function returns "R L R' L'" for both invalid inputs & solved inputs, so we need to check:
+if check == "R L R' L'":
+    if colors != ["U", "U", "U",
+                  "U", "U", "U",
+                  "U", "U", "U",
+                  "L", "L", "L", "F", "F", "F", "R", "R", "R", "B", "B", "B",
+                  "L", "L", "L", "F", "F", "F", "R", "R", "R", "B", "B", "B",
+                  "L", "L", "L", "F", "F", "F", "R", "R", "R", "B", "B", "B",
+                  "D", "D", "D",
+                  "D", "D", "D",
+                  "D", "D", "D"]:
+        invalid = Label(root, text="Invalid input", bg='red').grid(row=5, columnspan=12)
