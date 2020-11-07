@@ -236,11 +236,11 @@ if (Serial. available ()) {
      OneSideMvt (Tab [r] [ 1 ], Tab [r] [ 2 ], Tab [r] [ 3 ], Tab [r] [ 4 ]);
      Serial. print (r);
     }
-  else  if (Tab [r] [ 0 ] == 2 ) {                             // call the TwoSidesMvt method
-    TwoSidesMvt (Tab [r] [ 1 ], Tab [r] [ 2 ], Tab [r] [ 3 ], Tab [r] [ 4 ], Tab [r] [ 5 ], Tab [r] [ 6 ], Tab [r] [ 7 ]);
+  else  if (Tab [r] [ 0 ] == 2 ) {                             // call the TwoSidesSameMvt method
+    TwoSidesSameMvt (Tab [r] [ 1 ], Tab [r] [ 2 ], Tab [r] [ 3 ], Tab [r] [ 4 ], Tab [r] [ 5 ], Tab [r] [ 6 ], Tab [r] [ 7 ]);
     }
-  else  if (Tab [r] [ 0 ] == 3 ) {                             // call the TwoSidesNotMvt method
-    TwoSidesNotMvt (Tab [r] [ 1 ], Tab [r] [ 2 ], Tab [r] [ 3 ], Tab [r] [ 4 ], Tab [r] [ 5 ]);
+  else  if (Tab [r] [ 0 ] == 3 ) {                             // call the TwoSidesNotSameMvt method
+    TwoSidesNotSameMvt (Tab [r] [ 1 ], Tab [r] [ 2 ], Tab [r] [ 3 ], Tab [r] [ 4 ], Tab [r] [ 5 ]);
     }
   }
 }
