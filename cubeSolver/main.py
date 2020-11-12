@@ -129,5 +129,7 @@ if check == "R L R' L'":
                   "D", "D", "D",
                   "D", "D", "D"]:
         invalid = Label(root, text="Invalid input", bg='red').grid(row=5, columnspan=12)
+   else:
+        valid = Label(root,text="Already Solved", bg='green').grid(row=5, columnspan=12)
 
 root.mainloop()
