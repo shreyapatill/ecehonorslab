@@ -4,7 +4,7 @@
 // Define the ports
 
 // Definition A4998 F
-# define  pinEnableF  30                                    // Activate A4998
+# define  pinEnableF 30                                    // Activate A4998
 # define  pinStepF    2                                    // Rising edge = one step.
 # define  pinDirF     3                                    // Direction
 
@@ -24,7 +24,7 @@
 # define  pinDirL      5                                    // Direction
 
 // Definition A4998 D
-# define  pinEnableD  46                                    // Activate A4998
+# define  pinEnableD   46                                    // Activate A4998
 # define  pinStepD     19                                    // Rising edge = one step.
 # define  pinDirD      26                                    // Direction
 
@@ -32,6 +32,8 @@
 # define  pinEnableU  50                                    // Activate A4998
 # define  pinStepU    16                                    // Rising edge = one step.
 # define  pinDirU     40                                    // Direction
+
+# define  pinIRSensor 3                                     // Pin for IR Sensor
 
 // ############################################### ################################################# ##########
 // Declaration of the variables
@@ -113,6 +115,9 @@ pinMode (pinStepD, OUTPUT);
 pinMode (pinEnableU, OUTPUT);
 pinMode (pinDirU, OUTPUT);
 pinMode (pinStepU, OUTPUT);
+
+// Setup IR sensor
+pinMode (pinIRSensor, INPUT)
 
 // Setup of the "pinEnable" ports (blocking of the motor axes)
 digitalWrite (pinEnableF, LOW);
@@ -230,17 +235,21 @@ for ( int i = 0 ; i <acc; i ++) {                           // Both faces turn
 // ############################################### ################################################# ##########
 
 void  loop () {
-if (Serial. available ()) {
-  int r = Serial. read () - 65 ;                           // r: index of the movement in the Tab array
-  if (Tab [r] [ 0 ] == 1 ) {                                  // call the OneSideMvt method
-     OneSideMvt (Tab [r] [ 1 ], Tab [r] [ 2 ], Tab [r] [ 3 ], Tab [r] [ 4 ]);
-     Serial. print (r);
-    }
-  else  if (Tab [r] [ 0 ] == 2 ) {                             // call the TwoSidesSameMvt method
-    TwoSidesSameMvt (Tab [r] [ 1 ], Tab [r] [ 2 ], Tab [r] [ 3 ], Tab [r] [ 4 ], Tab [r] [ 5 ], Tab [r] [ 6 ], Tab [r] [ 7 ]);
-    }
-  else  if (Tab [r] [ 0 ] == 3 ) {                             // call the TwoSidesNotSameMvt method
-    TwoSidesNotSameMvt (Tab [r] [ 1 ], Tab [r] [ 2 ], Tab [r] [ 3 ], Tab [r] [ 4 ], Tab [r] [ 5 ]);
+int statusSensor = digitalRead (pinIRSensor);
+
+if (statusSensor == 1) {
+  if (Serial. available ()) {
+    int r = Serial. read () - 65 ;                           // r: index of the movement in the Tab array
+    if (Tab [r] [ 0 ] == 1 ) {                                  // call the OneSideMvt method
+      OneSideMvt (Tab [r] [ 1 ], Tab [r] [ 2 ], Tab [r] [ 3 ], Tab [r] [ 4 ]);
+      Serial. print (r);
+      }
+    else  if (Tab [r] [ 0 ] == 2 ) {                             // call the TwoSidesSameMvt method
+      TwoSidesSameMvt (Tab [r] [ 1 ], Tab [r] [ 2 ], Tab [r] [ 3 ], Tab [r] [ 4 ], Tab [r] [ 5 ], Tab [r] [ 6 ], Tab [r] [ 7 ]);
+      }
+    else  if (Tab [r] [ 0 ] == 3 ) {                             // call the TwoSidesNotSameMvt method
+      TwoSidesNotSameMvt (Tab [r] [ 1 ], Tab [r] [ 2 ], Tab [r] [ 3 ], Tab [r] [ 4 ], Tab [r] [ 5 ]);
+      }
     }
   }
 }
