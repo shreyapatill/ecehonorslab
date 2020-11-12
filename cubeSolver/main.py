@@ -114,8 +114,6 @@ def check_tiles():
 # make a button to check whether the input is valid
 check = Button(root, text="Check Input", command=check_tiles).grid(row=3, columnspan=12)
 
-root.mainloop()
-
 # calls solve function
 check = getSolution(str(colors))
 
@@ -131,3 +129,5 @@ if check == "R L R' L'":
                   "D", "D", "D",
                   "D", "D", "D"]:
         invalid = Label(root, text="Invalid input", bg='red').grid(row=5, columnspan=12)
+
+root.mainloop()
