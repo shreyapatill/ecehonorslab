@@ -1,0 +1,24 @@
+; This is a program by Aryan Gupta, made on November 13,2020
+; The purpose of this program is to add all the postive numbers
+; in a list of 10 numbers in the numbers.bin file
+; This function will check through the 10 numbers and only 
+; add the postiive numbers.
+; I am using 4 registers for my operations
+; Register 3 will be our pointer register and contain the address of the numbers
+; Register 4 will be the counter, and once the counter reaches 0 it stops
+; Register 5 will be ths sum counter, containing the sum
+; Register 6 will contain the numbers themselves to be checked
+
+
+
+
+1110 011 000110001     ; Load the address x3131 in R3
+0101 101 101 1 00000   ; Clear R5, this will be the sum
+0001 100 101 1 00101   ; Add 5 to R5 and store the value in R4, setting the counter to 5
+0001 011 011 1 00001   ; Adds 1 to R3 to shift to the next address
+0110 110 011 000000    ; Loads R6 with the value in the address in R3 
+0000 110 111111101     ; if value in R6 is positve, continue, else, go back 2 lines  
+0001 101 110 000 101   ; Add R5 and R6 to store in R6  
+0001 100 100 1 11111   ; Subtract 1 from R4 and store it in R4
+0000 101 111111010     ; if the value in R4 is 0, continue, else, go back 5 lines 
+1111 0000 0010 0101    ; HALT
