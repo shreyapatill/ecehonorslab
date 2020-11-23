@@ -31,7 +31,7 @@
 // Definition A4998 U
 # define  pinEnableU  50                                    // Activate A4998
 # define  pinStepU    16                                    // Rising edge = one step.
-# define  pinDirU     40                                    // Direction
+# define  pinDirU     38                                    // Direction
 
 # define  pinIRSensor 3                                     // Pin for IR Sensor
 
