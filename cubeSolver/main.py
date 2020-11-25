@@ -115,7 +115,7 @@ def check_tiles():
 check = Button(root, text="Check Input", command=check_tiles).grid(row=3, columnspan=12)
 
 # calls solve function
-check = read_solution(str(colors))
+check = write_solution(str(colors))
 
 # solve function returns "R L R' L'" for both invalid inputs & solved inputs, so we need to check:
 if check == "R L R' L'":
