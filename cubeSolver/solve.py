@@ -2802,7 +2802,7 @@ def getSolution(cubeString):
     print(noConvertSol)
     return noConvertSol #might need to format this still
 
-def read_solution(cubeString):
+def write_solution(cubeString):
     moves = getSolution(cubeString)
 
     with open('solutionMoves.txt', 'w') as filehandle:
