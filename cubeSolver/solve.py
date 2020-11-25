@@ -2786,9 +2786,10 @@ def convertLetter(letter):
         return 5
 
 def getSolution(cubeString):
+    print("Calculating solution...")
     c = []
-    for i in range(len(cubeString)):
-        number = convertLetter(cubeString[i])
+    for i in cubeString:
+        number = convertLetter(i)
         c.append(number)
     finalCube = [c[0],c[1], c[2], c[3], c[4], c[5], c[6], c[7], c[8],
                 c[12],c[13],c[14],c[24],c[25],c[26],c[36],c[37],c[38],
@@ -2796,8 +2797,8 @@ def getSolution(cubeString):
                 c[18],c[19],c[20],c[30],c[31],c[32],c[42],c[43],c[44],
                 c[9] ,c[10],c[11],c[21],c[22],c[23],c[33],c[34],c[35],
                 c[45],c[46],c[37],c[48],c[49],c[50],c[51],c[52],c[53]]
-    #cube = [3,0,5,5,0,5,0,4,0,3,2,4,1,3,4,3,1,0,0,3,4,1,4,5,3,0,5,1,0,1,2,1,3,1,1,4,2,4,4,2,2,5,1,4,2,2,2,5,3,5,3,2,0,5]
-    solution, noConvertSol = solve(cube)
+    #finalCube = [3,0,5,5,0,5,0,4,0,3,2,4,1,3,4,3,1,0,0,3,4,1,4,5,3,0,5,1,0,1,2,1,3,1,1,4,2,4,4,2,2,5,1,4,2,2,2,5,3,5,3,2,0,5]
+    solution, noConvertSol = solve(finalCube)
     print(solution)
     print(noConvertSol)
     return noConvertSol #might need to format this still

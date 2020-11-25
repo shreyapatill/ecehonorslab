@@ -93,7 +93,7 @@ for tile_number in range(45, 54):
 # method to print the tile colors
 def print_colors():
     color_input = Label(root, text=colors).grid(row=2, columnspan=12)
-
+    return colors
 
 # submit button that returns the array of colors
 color_button = Button(root, text="Print colors", command=print_colors).grid(row=1, columnspan=12)
@@ -108,28 +108,34 @@ def check_tiles():
             invalid = Label(root, text="Invalid input", bg='red').grid(row=5, columnspan=12)
             break
     else:
-        valid = Label(root,text="Valid input").grid(row=5, columnspan=12)
+        valid = Label(root,text="   Valid input   ").grid(row=5, columnspan=12) #extra whitespace so red from invalid doesn't show up
 
 
 # make a button to check whether the input is valid
 check = Button(root, text="Check Input", command=check_tiles).grid(row=3, columnspan=12)
 
-# calls solve function
-check = write_solution(str(colors))
+#root.mainloop()
 
-# solve function returns "R L R' L'" for both invalid inputs & solved inputs, so we need to check:
-if check == "R L R' L'":
-    if colors != ["U", "U", "U",
-                  "U", "U", "U",
-                  "U", "U", "U",
-                  "L", "L", "L", "F", "F", "F", "R", "R", "R", "B", "B", "B",
-                  "L", "L", "L", "F", "F", "F", "R", "R", "R", "B", "B", "B",
-                  "L", "L", "L", "F", "F", "F", "R", "R", "R", "B", "B", "B",
-                  "D", "D", "D",
-                  "D", "D", "D",
-                  "D", "D", "D"]:
-        invalid = Label(root, text="Invalid input", bg='red').grid(row=5, columnspan=12)
-    else:
-        valid = Label(root,text="Already Solved", bg='green').grid(row=5, columnspan=12)
+LOOP_ACTIVE = True
+while LOOP_ACTIVE:
+    try:
+        root.update()
+    except TclError:
+        # calls solve function
+        check = write_solution(colors)
 
-root.mainloop()
+        # solve function returns "R L R' L'" for both invalid inputs & solved inputs, so we need to check:
+        if check == "R L R' L'":
+            if colors != ["U", "U", "U",
+                        "U", "U", "U",
+                        "U", "U", "U",
+                        "L", "L", "L", "F", "F", "F", "R", "R", "R", "B", "B", "B",
+                        "L", "L", "L", "F", "F", "F", "R", "R", "R", "B", "B", "B",
+                        "L", "L", "L", "F", "F", "F", "R", "R", "R", "B", "B", "B",
+                        "D", "D", "D",
+                        "D", "D", "D",
+                        "D", "D", "D"]:
+                invalid = Label(root, text="Invalid input", bg='red').grid(row=5, columnspan=12)
+            else:
+                valid = Label(root,text="Already Solved", bg='green').grid(row=5, columnspan=12)
+        LOOP_ACTIVE = False
