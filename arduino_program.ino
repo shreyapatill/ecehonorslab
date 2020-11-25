@@ -20,8 +20,8 @@
 
 // Definition A4998 L
 # define  pinEnableL  42                                    // Activate A4998
-# define  pinStepL     6                                    // Rising edge = one step.
-# define  pinDirL      5                                    // Direction
+# define  pinStepL     5                                    // Rising edge = one step.
+# define  pinDirL      6                                    // Direction
 
 // Definition A4998 D
 # define  pinEnableD   46                                    // Activate A4998
@@ -31,7 +31,7 @@
 // Definition A4998 U
 # define  pinEnableU  50                                    // Activate A4998
 # define  pinStepU    16                                    // Rising edge = one step.
-# define  pinDirU     38                                    // Direction
+# define  pinDirU     20                                    // Direction
 
 # define  pinIRSensor 3                                     // Pin for IR Sensor
 
