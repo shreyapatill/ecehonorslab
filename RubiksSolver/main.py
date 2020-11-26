@@ -1,6 +1,6 @@
 from tkinter import *
 import solver as sv
-import motorOuput
+import motorOutput
 
 root = Tk()
 
