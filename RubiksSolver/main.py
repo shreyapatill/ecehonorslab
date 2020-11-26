@@ -1,5 +1,6 @@
 from tkinter import *
 import solver as sv
+import motorOuput
 
 root = Tk()
 
@@ -203,10 +204,12 @@ while LOOP_ACTIVE:
         #print(cubestring)
         moves = sv.solve(cubestring, 25, 2)
         print(moves)
+        
+        motorOutput.motorSolve(moves)
 
         #write the solution into a file so C++ can use it
-        with open('solutionMoves.txt', 'w') as filehandle:
-            for listitem in moves.split():
-                filehandle.write('%s\n' % listitem)
+        #with open('solutionMoves.txt', 'w') as filehandle:
+        #    for listitem in moves.split():
+        #        filehandle.write('%s\n' % listitem)
 
         LOOP_ACTIVE = False
