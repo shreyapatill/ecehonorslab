@@ -198,13 +198,12 @@ while LOOP_ACTIVE:
     try:
         root.update()
     except TclError:
-        # calls solve function
-        #print(colors)
+        #converts tkinter colors to solver colors
+
         cubestring = converter(colors)
-        #print(cubestring)
-        moves = sv.solve(cubestring, 25, 2)
-        print(moves)
-        
+        moves = sv.solve(cubestring, 25, 2) #maximum 25 moves, 2 seconds (can set to as low as 20, but not necessary)
+        #print(moves)
+
         motorOutput.motorSolve(moves)
 
         #write the solution into a file so C++ can use it
