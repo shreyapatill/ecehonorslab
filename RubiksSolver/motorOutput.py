@@ -87,7 +87,18 @@ def motorSolve(solveString):
             direc = dirD
             clock = CCW
             step_count = 50
-        for i in range(int(move[1])):
+        
+        #if we're turning 3 times, just turn once the opposite direction
+        toTurn = int(move[1])
+        if int(move[1]) == 3:
+            toTurn = 1
+            if clock == CCW:
+                clock = CW
+            else:
+                clock = CCW
+        
+        #perform move
+        for i in range(toTurn):
             GPIO.output(direc, clock)
             #spins the motor 90 degrees
             for j in range(step_count):

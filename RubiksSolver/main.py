@@ -1,6 +1,8 @@
 from tkinter import *
 import solver as sv
 import motorOutput
+import sensor_led_output
+import time
 
 root = Tk()
 
@@ -204,7 +206,13 @@ while LOOP_ACTIVE:
         moves = sv.solve(cubestring, 25, 2) #maximum 25 moves, 2 seconds (can set to as low as 20, but not necessary)
         #print(moves)
 
+        #SAFETY CHECK! Wait for top to be put on, and button to be pressed
+        sensor_led_output.waitForSafety()
+
+        #actually solves the cube, times the solve
+        start_time = time.time()
         motorOutput.motorSolve(moves)
+        print("Time taken: " + str(time.time() - start_time))
 
         #write the solution into a file so C++ can use it
         #with open('solutionMoves.txt', 'w') as filehandle:
